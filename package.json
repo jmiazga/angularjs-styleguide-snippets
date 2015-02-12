@@ -1,0 +1,16 @@
+{
+  "name": "angularjs-styleguide-snippets",
+  "main": "./lib/angularjs-styleguide-snippets",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-workspace": "angularjs-styleguide-snippets:toggle"
+  },
+  "repository": "https://github.com/jmiazga/angularjs-styleguide-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
