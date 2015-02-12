@@ -2,7 +2,7 @@
   "name": "angularjs-styleguide-snippets",
   "main": "./lib/angularjs-styleguide-snippets",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "A set of AngularJS snippets based on John Papa's style guide.",
   "activationCommands": {
     "atom-workspace": "angularjs-styleguide-snippets:toggle"
   },

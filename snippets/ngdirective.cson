@@ -1,0 +1,44 @@
+'.source.js':
+  'ngDirective':
+    'prefix': 'ngdirective'
+    'body': """
+      (function() {
+          'use strict';
+
+          angular
+              .module('${1:module}')
+              .directive('${2:directive}', ${2:directive});
+
+          function ${2:directive}() {
+              var directive = {
+                  restrict: '${3:EA}'
+                  templateUrl: '${4:templateUrl}',
+                  scope: {
+                  },
+                  link: linkFunc,
+                  controller: '${5:Controller}',
+                  controllerAs: 'vm',
+                  bindToController: true
+              };
+
+              return directive;
+
+              function linkFunc(scope, el, attr, ctrl) {
+
+              }
+          }
+
+          ${5:Controller}.$inject = ['${6:dependencies}'];
+
+          function ${5:Controller}(${7:dependencies}) {
+              /*jshint validthis: true */
+              var vm = this;
+
+              activate();
+
+              function activate() {
+
+              }
+          }
+      })();
+    """
