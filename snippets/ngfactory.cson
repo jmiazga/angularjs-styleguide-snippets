@@ -18,7 +18,7 @@
 
               return service;
 
-              function ${5:dependencies}() {
+              function ${5:function}() {
 
               }
           }
