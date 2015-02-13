@@ -3,9 +3,6 @@
   "main": "./lib/angularjs-styleguide-snippets",
   "version": "0.2.0",
   "description": "A set of AngularJS snippets based on John Papa's style guide.",
-  "activationCommands": {
-    "atom-workspace": "angularjs-styleguide-snippets:toggle"
-  },
   "repository": "https://github.com/jmiazga/angularjs-styleguide-snippets",
   "license": "MIT",
   "engines": {
