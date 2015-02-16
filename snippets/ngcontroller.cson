@@ -11,7 +11,7 @@
 
           ${2:Controller}.$inject = ['${3:dependencies}'];
 
-          function ${2:Controller}(${4:dependencies}) {
+          function ${2:Controller}(${3:dependencies}) {
               var vm = this;
 
               activate();

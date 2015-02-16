@@ -29,7 +29,7 @@ You can use the following snippets in JavaScript.
 
     ${2:Controller}.$inject = ['${3:dependencies}'];
 
-    function ${2:Controller}(${4:dependencies}) {
+    function ${2:Controller}(${3:dependencies}) {
         var vm = this;
 
         activate();
@@ -51,14 +51,14 @@ You can use the following snippets in JavaScript.
 
     ${2:factory}.$inject = ['${3:dependencies}'];
 
-    function ${2:factory}(${4:dependencies}) {
+    function ${2:factory}(${3:dependencies}) {
         var service = {
-            ${5:function}: ${5:function}
+            ${4:function}: ${4:function}
         };
 
         return service;
 
-        function ${5:function}() {
+        function ${4:function}() {
         }
     }
 })();
@@ -93,7 +93,7 @@ You can use the following snippets in JavaScript.
 
     ${5:Controller}.$inject = ['${6:dependencies}'];
 
-    function ${5:Controller}(${7:dependencies}) {
+    function ${5:Controller}(${6:dependencies}) {
         var vm = this;
 
         activate();
