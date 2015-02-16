@@ -31,7 +31,6 @@
           ${5:Controller}.$inject = ['${6:dependencies}'];
 
           function ${5:Controller}(${7:dependencies}) {
-              /*jshint validthis: true */
               var vm = this;
 
               activate();

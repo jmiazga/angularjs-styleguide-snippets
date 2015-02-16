@@ -10,7 +10,7 @@ You can use the following snippets in JavaScript.
 ```
 (function() {
     'use strict';
-        
+
     angular
         .module('${1:module}', [
             '${2:dependencies}'
@@ -22,19 +22,18 @@ You can use the following snippets in JavaScript.
 ```
 (function() {
     'use strict';
-    
+
     angular
         .module('${1:module}')
         .controller('${2:Controller}', ${2:Controller});
-        
+
     ${2:Controller}.$inject = ['${3:dependencies}'];
-    
+
     function ${2:Controller}(${4:dependencies}) {
-        /*jshint validthis: true */
         var vm = this;
-        
+
         activate();
-        
+
         function activate() {
         }
     }
@@ -45,20 +44,20 @@ You can use the following snippets in JavaScript.
 ```
 (function() {
     'use strict';
-    
+
     angular
         .module('${1:module}')
         .factory('${2:factory}', ${2:factory});
-        
+
     ${2:factory}.$inject = ['${3:dependencies}'];
-    
+
     function ${2:factory}(${4:dependencies}) {
         var service = {
             ${5:function}: ${5:function}
         };
-        
+
         return service;
-        
+
         function ${5:function}() {
         }
     }
@@ -69,11 +68,11 @@ You can use the following snippets in JavaScript.
 ```
 (function() {
     'use strict';
-    
+
     angular
         .module('${1:module}')
         .directive('${2:directive}', ${2:directive});
-        
+
     function ${2:directive}() {
         var directive = {
             restrict: '${3:EA}'
@@ -85,21 +84,20 @@ You can use the following snippets in JavaScript.
             controllerAs: 'vm',
             bindToController: true
         };
-                    
+
         return directive;
-        
+
         function linkFunc(scope, el, attr, ctrl) {
         }
     }
-    
+
     ${5:Controller}.$inject = ['${6:dependencies}'];
-    
+
     function ${5:Controller}(${7:dependencies}) {
-        /*jshint validthis: true */
         var vm = this;
-        
+
         activate();
-        
+
         function activate() {
         }
     }
