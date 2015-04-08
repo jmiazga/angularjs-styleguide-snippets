@@ -11,12 +11,12 @@
 
           function ${2:directive}() {
               var directive = {
-                  restrict: '${3:EA}'
+                  restrict: '${3:EA}',
                   templateUrl: '${4:templateUrl}',
                   scope: {
                   },
                   link: linkFunc,
-                  controller: '${5:Controller}',
+                  controller: ${5:Controller},
                   controllerAs: 'vm',
                   bindToController: true
               };
