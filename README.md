@@ -35,6 +35,7 @@ You can use the following snippets in JavaScript.
         activate();
 
         function activate() {
+
         }
     }
 })();
@@ -59,6 +60,7 @@ You can use the following snippets in JavaScript.
         return service;
 
         function ${4:function}() {
+
         }
     }
 })();
@@ -75,12 +77,12 @@ You can use the following snippets in JavaScript.
 
     function ${2:directive}() {
         var directive = {
-            restrict: '${3:EA}'
+            restrict: '${3:EA}',
             templateUrl: '${4:templateUrl}',
             scope: {
             },
             link: linkFunc,
-            controller: '${5:Controller}',
+            controller: ${5:Controller},
             controllerAs: 'vm',
             bindToController: true
         };
@@ -88,6 +90,7 @@ You can use the following snippets in JavaScript.
         return directive;
 
         function linkFunc(scope, el, attr, ctrl) {
+
         }
     }
 
@@ -99,6 +102,47 @@ You can use the following snippets in JavaScript.
         activate();
 
         function activate() {
+
+        }
+    }
+})();
+```
+
+##### ngservice
+```
+(function() {
+    'use strict';
+
+    angular
+        .module('${1:module}')
+        .service('${2:Service}', ${2:Service});
+
+    ${2:Service}.$inject = ['${3:dependencies}'];
+
+    function ${2:Service}(${3:dependencies}) {
+        this.${4:function} = ${4:function};
+
+        function ${4:function}() {
+
+        }
+    }
+})();
+```
+
+##### ngfilter
+```
+(function() {
+    'use strict';
+
+    angular
+        .module('${1:module}')
+        .filter('${2:filter}', ${2:filter});
+
+    function ${2:filter}() {
+        return ${2:filter}Filter
+
+        function ${2:filter}Filter(${3:params}) {
+            return ${3:params};
         }
     }
 })();
