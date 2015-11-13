@@ -29,6 +29,7 @@ You can use the following snippets in JavaScript.
 
     ${2:Controller}.$inject = ['${3:dependencies}'];
 
+    /* @ngInject */
     function ${2:Controller}(${3:dependencies}) {
         var vm = this;
 
@@ -52,6 +53,7 @@ You can use the following snippets in JavaScript.
 
     ${2:factory}.$inject = ['${3:dependencies}'];
 
+    /* @ngInject */
     function ${2:factory}(${3:dependencies}) {
         var service = {
             ${4:function}: ${4:function}
@@ -75,6 +77,7 @@ You can use the following snippets in JavaScript.
         .module('${1:module}')
         .directive('${2:directive}', ${2:directive});
 
+    /* @ngInject */
     function ${2:directive}() {
         var directive = {
             restrict: '${3:EA}',
@@ -96,6 +99,7 @@ You can use the following snippets in JavaScript.
 
     ${5:Controller}.$inject = ['${6:dependencies}'];
 
+    /* @ngInject */
     function ${5:Controller}(${6:dependencies}) {
         var vm = this;
 
@@ -119,6 +123,7 @@ You can use the following snippets in JavaScript.
 
     ${2:Service}.$inject = ['${3:dependencies}'];
 
+    /* @ngInject */
     function ${2:Service}(${3:dependencies}) {
         this.${4:function} = ${4:function};
 
