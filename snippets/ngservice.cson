@@ -11,6 +11,7 @@
 
           ${2:Service}.$inject = ['${3:dependencies}'];
 
+          /* @ngInject */
           function ${2:Service}(${3:dependencies}) {
               this.${4:function} = ${4:function};
 

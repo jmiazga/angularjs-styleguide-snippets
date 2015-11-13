@@ -11,6 +11,7 @@
 
           ${2:factory}.$inject = ['${3:dependencies}'];
 
+          /* @ngInject */
           function ${2:factory}(${3:dependencies}) {
               var service = {
                   ${4:function}: ${4:function}

@@ -11,6 +11,7 @@
 
           ${2:Controller}.$inject = ['${3:dependencies}'];
 
+          /* @ngInject */
           function ${2:Controller}(${3:dependencies}) {
               var vm = this;
 
