@@ -68,6 +68,34 @@ You can use the following snippets in JavaScript.
 })();
 ```
 
+##### ngcomponent
+```
+(function() {
+          'use strict';
+
+          angular
+              .module('${1:module}')
+              .component('${2:component}', ${2:component});
+
+          /* @ngInject */
+          function ${2:component}() {
+              var component = {
+                  templateUrl: '${4:templateUrl}',
+                  controller: ${5:Controller},
+              };
+
+              return component; 
+          }
+
+          ${5:Controller}.$inject = ['${6:dependencies}'];
+
+          /* @ngInject */
+          function ${5:Controller}(${6:dependencies}) {
+
+          }
+      })();
+```
+
 ##### ngdirective
 ```
 (function() {
