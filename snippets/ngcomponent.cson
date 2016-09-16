@@ -7,17 +7,10 @@
 
           angular
               .module('${1:module}')
-              .component('${2:component}', ${2:component});
-
-          /* @ngInject */
-          function ${2:component}() {
-              var component = {
+              .component('${2:component}', {
                   templateUrl: '${4:templateUrl}',
                   controller: ${5:Controller},
-              };
-
-              return component; 
-          }
+              });
 
           ${5:Controller}.$inject = ['${6:dependencies}'];
 
