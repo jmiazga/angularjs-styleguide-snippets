@@ -84,7 +84,7 @@ You can use the following snippets in JavaScript.
                   controller: ${5:Controller},
               };
 
-              return component; 
+              return component;
           }
 
           ${5:Controller}.$inject = ['${6:dependencies}'];
@@ -179,4 +179,56 @@ You can use the following snippets in JavaScript.
         }
     }
 })();
+```
+
+##### ngroute
+```
+(function() {
+    'use strict';
+
+    angular
+        .module('${1:module}')
+        .run(appRun);
+
+    appRun.$inject = ['routerHelper'];
+    /* @ngInject */
+    function appRun(routerHelper) {
+        routerHelper.configureStates(getStates());
+    }
+
+    function getStates() {
+        return [
+            {
+                state: '${2:state}',
+                config: {
+                    url: '/',
+                    templateUrl: 'app/${2:state}/${2:state}.html',
+                    controller: '${2:State}Controller',
+                    controllerAs: 'vm',
+                    title: '${2:state}',
+                    params: {
+                        ${3:param}: ${4:value}
+                    }
+                }
+            }
+        ];
+    }
+})();
+```
+
+##### ngstate
+```
+{
+    state: '${1:state}',
+    config: {
+        url: '/',
+        templateUrl: 'app/${1:state}/${1:state}.html',
+        controller: '${1:State}Controller',
+        controllerAs: 'vm',
+        title: '${1:state}',
+        params: {
+            ${2:param}: ${3:value}
+        }
+    }
+}
 ```
