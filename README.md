@@ -75,7 +75,7 @@ You can use the following snippets in JavaScript.
 
           angular
               .module('${1:module}')
-              .component('${2:component}', ${2:component});
+              .component('${2:component}', ${2:component}());
 
           /* @ngInject */
           function ${2:component}() {
